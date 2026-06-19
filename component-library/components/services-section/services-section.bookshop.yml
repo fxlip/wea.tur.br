@@ -1,0 +1,41 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Services section
+  description: Four service cards with an icon, title and description, responsive (row / 2x2 / carousel)
+  icon: grid_view
+  tags:
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: ""
+  description_html: ""
+  items:
+    - icon: ""
+      title: ""
+      description_html: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  title: Nossos Serviços
+  description_html: <p>Soluções de transporte para cada necessidade.</p>
+  items:
+    - icon: car-sport-outline
+      title: Serviço 1
+      description_html: Descrição breve do serviço.
+    - icon: airplane-outline
+      title: Serviço 2
+      description_html: Descrição breve do serviço.
+    - icon: business-outline
+      title: Serviço 3
+      description_html: Descrição breve do serviço.
+    - icon: people-outline
+      title: Serviço 4
+      description_html: Descrição breve do serviço.
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  icon:
+    comment: "Nome do ícone Ionicons (ex.: car-sport-outline). Lista em ionic.io/ionicons"

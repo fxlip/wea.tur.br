@@ -1,0 +1,42 @@
+<!-- begin solutions -->
+<section class="section solutions animate" id="solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="c-solutions">
+
+          <div class="c-solutions__content">
+            {% if include.title %}
+            <h2 class="c-solutions__title">{{ include.title }}</h2>
+            {% endif %}
+            {% if include.description_html %}
+            <div class="c-solutions__description">{{ include.description_html }}</div>
+            {% endif %}
+            {% if include.items %}
+            <ul class="c-solutions__list list-reset">
+              {% for item in include.items %}
+              <li class="c-solutions__item">
+                <ion-icon name="checkmark-circle"></ion-icon>
+                <span>{{ item }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          <div class="c-solutions__media">
+            {% for img in include.images %}
+            <div class="c-solutions__image">
+              <img loading="lazy" src="{{ img.image }}" alt="{{ img.image_alt }}">
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end solutions -->

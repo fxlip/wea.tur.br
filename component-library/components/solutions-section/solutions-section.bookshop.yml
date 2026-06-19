@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Solutions section
+  description: Heading, description and a list on one side with an overlapping two-image collage on the other
+  icon: view_quilt
+  tags:
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: ""
+  description_html: ""
+  items: []
+  images:
+    - image: ""
+      image_alt: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  title: Soluções pensadas para quem exige mais do transporte
+  description_html: Atendemos perfis que entendem que mobilidade é parte da experiência.
+  items:
+    - Executivos e empresários com agendas estratégicas
+    - Turistas de alto padrão que buscam conforto e exclusividade
+  images:
+    - image: /images/fotos-3.jpeg
+      image_alt: Atendimento executivo
+    - image: /images/fotos-4.jpeg
+      image_alt: Veículo de alto padrão
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  image_alt:
+    comment: Texto alternativo da imagem

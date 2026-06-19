@@ -1,0 +1,42 @@
+<!-- begin services -->
+<section class="section services animate" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        {% if include.title or include.description_html %}
+        <div class="section__info">
+          {% if include.title %}
+          <div class="section__head">
+            <h2 class="section__title">{{ include.title }}</h2>
+          </div>
+          {% endif %}
+          {% if include.description_html %}
+          <div class="section__description">{{ include.description_html }}</div>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="services__grid">
+          {% for item in include.items %}
+          <article class="c-service-card">
+            {% if item.icon %}
+            <div class="c-service-card__icon">
+              <ion-icon name="{{ item.icon }}"></ion-icon>
+            </div>
+            {% endif %}
+            {% if item.title %}
+            <h3 class="c-service-card__title">{{ item.title }}</h3>
+            {% endif %}
+            {% if item.description_html %}
+            <div class="c-service-card__description">{{ item.description_html }}</div>
+            {% endif %}
+          </article>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end services -->
