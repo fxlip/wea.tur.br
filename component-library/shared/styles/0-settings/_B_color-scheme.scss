@@ -1,29 +1,29 @@
-/* Color Scheme — Dark */
-$primary-color: #19b3c9;
-$secondary-color: #3358d4;
+/* Color Scheme — Black & Gold */
+$primary-color: #BFA05E;
+$secondary-color: #8C7339;
 $white: #fff;
-$dark: #e8ebf5;
-$gray: #2a2f42;
-$light-gray: #1a1d2b;
-$blue-gray: #242a40;
+$dark: #ededed;
+$gray: #1a1a1a;
+$light-gray: #121212;
+$blue-gray: #161616;
 
-$background-color: #0d1020;
-$background-color-alt: #161a2e;
+$background-color: #000000;
+$background-color-alt: #0d0d0d;
 
 $text-color: $dark;
 
 $heading-font-color: $text-color;
 
 $link-color: $text-color;
-$link-color-hover: $text-color;
+$link-color-hover: $primary-color;
 
-$button-color: $white;
+$button-color: #000000;
 $button-background-color: $primary-color;
 $button-background-hover: darken($primary-color, 5%);
 
-$border-color: $blue-gray;
+$border-color: rgba($primary-color, 0.25);
 
 $hr-color: $text-color;
-$tr-color: #1a1e30;
+$tr-color: #141414;
 
-$syntax-highlighting-background: #15182a;
+$syntax-highlighting-background: #0d0d0d;

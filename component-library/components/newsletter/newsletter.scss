@@ -1,13 +1,21 @@
 /* Newsletter */
 
 .c-subscribe { $c: &;
+	&.section {
+		padding: 40px 0;
+
+		@media only screen and (max-width: $mobile) {
+			padding: 32px 0;
+		}
+	}
+
 	&__inner {
 		max-width: 580px;
 		margin: 0 auto;
 	}
 
 	&__info {
-		margin-bottom: 44px;
+		margin-bottom: 24px;
 		text-align: center;
 
 		@media only screen and (max-width: $mobile) {
