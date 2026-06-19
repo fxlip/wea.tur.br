@@ -1,6 +1,5 @@
 ---
-name: Tatiana Curtis
-position: Art Director
-image: 'images/client-3.jpg'
-blurb: Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.
+name: Eduardo Bianchi
+image: 'images/client-3.png'
+blurb: Minha rotina de reportagem em Brasília muda o tempo todo, e não é raro precisar me deslocar de madrugada. Poder contar com um serviço de qualidade desses, sempre discreto e no horário, me dá uma segurança que nenhum aplicativo oferece.
 ---
