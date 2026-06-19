@@ -12,7 +12,8 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		margin-bottom: 32px;
+		gap: 14px;
+		margin-bottom: 24px;
 	}
 
 	&__client-text {
@@ -42,7 +43,6 @@
 		position: relative;
 		width: 80px;
 		height: 80px;
-		margin-bottom: 8px;
 		border-radius: 50%;
 		overflow: hidden;
 		box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
@@ -59,21 +59,28 @@
 	}
 
 	&__client-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
 		text-align: center;
 	}
 
 	&__client-name {
-		margin-bottom: 8px;
+		margin: 0;
 		font-size: 21px;
 		line-height: 1;
 		letter-spacing: normal;
 	}
 
-	&__client-position {
-		margin: 0;
-		font-size: 14px;
-		font-weight: 500;
-		line-height: 1;
-		opacity: 0.7;
+	&__rating {
+		display: flex;
+		justify-content: center;
+		gap: 3px;
+		color: #ffc94d;
+
+		ion-icon {
+			font-size: 17px;
+		}
 	}
 }

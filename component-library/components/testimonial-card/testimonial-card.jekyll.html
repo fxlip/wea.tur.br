@@ -11,6 +11,13 @@
         {% if include.testimonial-item.name %}
           <h3 class="{{c}}__client-name">{{ include.testimonial-item.name }}</h3>
         {% endif %}
+        <div class="{{c}}__rating" role="img" aria-label="Avaliação cinco de cinco estrelas">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
       </div>
     </div>
     {% if include.testimonial-item.blurb %}
