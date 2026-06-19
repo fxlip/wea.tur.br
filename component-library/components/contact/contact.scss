@@ -20,7 +20,7 @@
 	}
 
 	&__location-popout-details {
-		background-color: #fff;
+		background-color: $background-color-alt;
 		border-radius: 15px;
 		padding: 34px 30px;
 		position: absolute;
@@ -149,6 +149,6 @@
 		max-height: 625px;
 		border-top-left-radius: 30px;
 		border-bottom-left-radius: 30px;
-		background-color: #f7f7f7;
+		background-color: $background-color-alt;
 	}
 }
