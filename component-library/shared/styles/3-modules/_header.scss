@@ -36,7 +36,26 @@
 }
 
 .logo__image {
-  max-height: 50px;
+  max-height: 100px;
+}
+
+.header__instagram {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  color: $text-color;
+  transition: transform .2s ease, color .2s ease;
+
+  svg {
+    display: block;
+    width: 44px;
+    height: 44px;
+  }
+
+  &:hover {
+    color: #e1306c;
+    transform: translateY(-2px) scale(1.05);
+  }
 }
 
 /* Nav */

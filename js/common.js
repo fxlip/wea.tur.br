@@ -9,20 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
   menuCloseIcon = document.querySelector(".nav__icon-close"),
   menuList = document.querySelector(".main-nav");
 
-  menuOpenIcon.addEventListener("click", () => {
-    menuOpen();
-  });
+  if (menuOpenIcon) {
+    menuOpenIcon.addEventListener("click", () => {
+      menuOpen();
+    });
+  }
 
-  menuCloseIcon.addEventListener("click", () => {
-    menuClose();
-  });
+  if (menuCloseIcon) {
+    menuCloseIcon.addEventListener("click", () => {
+      menuClose();
+    });
+  }
 
   function menuOpen() {
-    menuList.classList.add("is-open");
+    if (menuList) menuList.classList.add("is-open");
   }
 
   function menuClose() {
-    menuList.classList.remove("is-open");
+    if (menuList) menuList.classList.remove("is-open");
   }
 
   /* =======================
