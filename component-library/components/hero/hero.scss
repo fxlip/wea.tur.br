@@ -130,11 +130,9 @@
 	&__btn {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
+		gap: 12px;
 		margin-top: 40px;
-
-		.cta-button {
-			margin-right: 8px;
-		}
 
 		.works-button {
 			&:hover {
@@ -176,7 +174,10 @@
 		}
 
 		@media only screen and (max-width: $mobile) {
-			.cta-button,
+			flex-direction: column;
+			align-items: flex-start;
+
+			.c-whatsapp-btn,
 			.works-button {
 				font-size: 15px;
 			}

@@ -12,10 +12,6 @@
   padding: 48px $base-spacing-unit 40px;
   min-height: 80px;
 
-  @media only screen and (max-width: $desktop) {
-    align-items: baseline;
-  }
-
   @media only screen and (max-width: $mobile) {
     padding: 30px $base-spacing-unit;
   }
